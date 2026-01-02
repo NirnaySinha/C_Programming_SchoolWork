@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char username[20], password[20];
+    char correctUser[] = "admin";
+    char correctPass[] = "1234";
+
+    printf("Enter username: ");
+    scanf("%s", username);
+    printf("Enter password: ");
+    scanf("%s", password);
+
+    if(strcmp(username, correctUser) == 0 && strcmp(password, correctPass) == 0)
+        printf("Login Successful");
+    else
+        printf("Invalid Login");
+
+    return 0;
+}
